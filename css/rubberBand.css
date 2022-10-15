@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'homie-font';
+  src: url(../webfonts/coolvetica.woff) format('woff');
+}
+
+
+.homie {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.homieeach {
+  display: inline-block;
+}
+
+
+.rubberBand {
+  color: #73f9d9;
+  text-shadow: 2px 2px red;
+  transition: all 0.5s ease-out;
+  animation-name: squeeze;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes squeeze {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+.homie-name{
+  display: inline-block;
+}
+
+.homie-portfolio,.homie-contact,.homie-about{
+  font-family: 'homie-font';
+  font-weight: normal;
+  letter-spacing: 0.2rem;
+  font-size: 4.5rem;
+}
